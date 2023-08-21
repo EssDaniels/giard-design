@@ -1,0 +1,10 @@
+@import "mixin";
+
+/**
+ * Czcionki
+ * @include font-face({font-name}, '../fonts/{font-folder}/{font-file-name}', {font-weight}, {font-style}, {font-type: woff ttf woff2});
+ */
+
+//Lato
+@include font-face("Lato", "../fonts/lato/Lato-Thin", 100, normal, ttf);
+@include font-face("Lato", "../fonts/lato/Lato-Black", 900, normal, ttf);

@@ -1,0 +1,82 @@
+$font-primary: "lato", sans-serif;
+
+$palette: (
+  white: #ffffff,
+  background: (
+    light: #f5f6f7,
+    dark: #102838,
+  ),
+  black: (
+    100: #181818,
+    80: #464646,
+    60: #747474,
+    40: #ceb69e,
+    20: #d1d1d1,
+    10: #e8e8e8,
+  ),
+  grey: (
+    100: #716e6e,
+    80: #918e8e,
+    60: #a19e9e,
+    40: #b1afaf,
+    20: #d2cfcf,
+    10: #e2e0e0,
+  ),
+  green: (
+    120: #5f9400,
+    100: #78b014,
+    80: #93c043,
+    60: #aed072,
+    40: #c9dfa1,
+    20: #e4efd0,
+    10: #f2f7e8,
+  ),
+);
+
+%drop-shadow,
+.drop-shadow {
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.16);
+}
+
+// border-radius
+$radius: 6px;
+
+// color style
+$color-blue: #1a0163;
+
+//fonts
+
+$margins: (
+  0,
+  6,
+  8,
+  10,
+  12,
+  14,
+  16,
+  18,
+  20,
+  22,
+  24,
+  23,
+  26,
+  28,
+  32,
+  40,
+  44,
+  48,
+  56,
+  60,
+  64,
+  72,
+  80,
+  94,
+  96,
+  98,
+  104,
+  106,
+  112,
+  116,
+  120,
+  160
+);

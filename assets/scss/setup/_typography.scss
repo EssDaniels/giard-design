@@ -1,0 +1,44 @@
+/* Tutaj trzymamy wyłącznie typografię */
+
+%font-primary,
+.font-primary {
+  font-family: $font-primary;
+}
+
+%typo-h1,
+.typo-h1,
+h1 {
+  @extend %font-primary;
+  font-size: 72px;
+  line-height: 80px;
+}
+
+%typo-h2,
+.typo-h2,
+h2 {
+  @extend %font-primary;
+  font-size: 56px;
+  line-height: 64px;
+}
+
+%typo-h3,
+.typo-h3,
+h3 {
+  @extend %font-primary;
+  font-size: 40px;
+  line-height: 48px;
+}
+
+%typo-h4,
+.typo-h4,
+h4 {
+  @extend %font-primary;
+  font-size: 32px;
+  line-height: 40px;
+}
+
+%p-regular,
+.p-regular {
+  font-size: 16px;
+  line-height: 25px;
+}

@@ -1,0 +1,8 @@
+{
+  "name": "ess/daniels",
+  "version": "2.0.0",
+  "description": "CP Wordpress Starter Pack 1.0 package file.",
+  "require": {
+      "symfony/var-dumper": "^5.1"
+  }
+}

@@ -1,0 +1,14 @@
+body {
+  margin: 0;
+  top: 0;
+  left: 0;
+  background-image: url("../images/dog.jpg");
+  color: #ceb69e;
+  font-family: $font-primary;
+}
+.container {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
+}
