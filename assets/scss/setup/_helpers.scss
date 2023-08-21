@@ -1,21 +1,6 @@
-//color
 
-.color {
-  @each $name, $value in $palette {
-    @if (type-of($value) == "color") {
-      &-#{$name} {
-        color: $value;
-      }
-    }
-
-    @if (type-of($value) == "map") {
-      &-#{$name} {
-        @each $color, $hex in $value {
-          &-#{$color} {
-            color: $hex;
-          }
-        }
-      }
-    }
-  }
+@mixin typography($font-size, $line-height, $font-weight) {
+  font-size: $font-size;
+  line-height: $line-height;
+  font-weight: $font-weight;
 }

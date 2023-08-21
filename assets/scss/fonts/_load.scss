@@ -5,6 +5,17 @@
  * @include font-face({font-name}, '../fonts/{font-folder}/{font-file-name}', {font-weight}, {font-style}, {font-type: woff ttf woff2});
  */
 
-//Lato
-@include font-face("Lato", "../fonts/lato/Lato-Thin", 100, normal, ttf);
-@include font-face("Lato", "../fonts/lato/Lato-Black", 900, normal, ttf);
+
+$font-name: "Montserrat";
+
+@include font-face($font-name, "../fonts/" + $font-name + "/" + $font-name + "-Light", 300, normal, ttf);
+@include font-face($font-name, "../fonts/" + $font-name + "/" + $font-name + "-Regular", 400, normal, ttf);
+@include font-face($font-name, "../fonts/" + $font-name + "/" + $font-name + "-Bold", 700, normal, ttf);
+@include font-face($font-name, "../fonts/" + $font-name + "/" + $font-name + "-Black", 900, normal, ttf);
+
+$font-name: "Inter";
+
+@include font-face($font-name, "../fonts/" + $font-name + "/" + $font-name + "-Light", 300, normal, ttf);
+@include font-face($font-name, "../fonts/" + $font-name + "/" + $font-name + "-Regular", 400, normal, ttf);
+@include font-face($font-name, "../fonts/" + $font-name + "/" + $font-name + "-Bold", 700, normal, ttf);
+@include font-face($font-name, "../fonts/" + $font-name + "/" + $font-name + "-Black", 900, normal, ttf);
