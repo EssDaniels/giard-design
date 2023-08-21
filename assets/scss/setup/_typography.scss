@@ -4,41 +4,67 @@
 .font-primary {
   font-family: $font-primary;
 }
+%font-secondery,
+.font-secondery {
+  font-family: $font-secondery;
+}
 
 %typo-h1,
 .typo-h1,
 h1 {
   @extend %font-primary;
-  font-size: 72px;
-  line-height: 80px;
+  @include typography(60px, 70px, 500);
+  color: $color-black;
 }
 
 %typo-h2,
 .typo-h2,
 h2 {
   @extend %font-primary;
-  font-size: 56px;
-  line-height: 64px;
+  @include typography(48px, 55px, 500);
+  color: $color-black;
+  letter-spacing: -1.44px;
+  span{
+    font-style: italic;
+  }
 }
 
 %typo-h3,
 .typo-h3,
 h3 {
   @extend %font-primary;
-  font-size: 40px;
-  line-height: 48px;
+  @include typography(28px, 32.2px, 500);
+  color: $color-black;
+  letter-spacing: -1.4px;
 }
 
 %typo-h4,
 .typo-h4,
 h4 {
   @extend %font-primary;
-  font-size: 32px;
-  line-height: 40px;
+  @include typography(14px, 32.2px, 500);
+  color: $color-black;
+  letter-spacing: -1.4px;
 }
 
 %p-regular,
-.p-regular {
-  font-size: 16px;
-  line-height: 25px;
+.p-regular,
+p {
+  @extend %font-secondery;
+  @include typography(16px, 24px, 400);
+  color: $color-black;
+}
+p.small{
+  @extend %font-secondery;
+  @include typography(14px, 21px, 400);
+  color: $color-black;
+  letter-spacing: -0.14px;
+}
+span.category{
+  @include typography(12px, 18px, 400);
+  color: $color-green;
+  letter-spacing: -0.12px;
+  &--white{
+    color: $color-white;
+  }
 }
