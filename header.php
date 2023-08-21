@@ -10,3 +10,11 @@
 </head>
 
 <body>
+    <header class="menu">
+        <div class="menu__wrapper">
+            <div class="menu__logo"></div>
+            <div class="menu__category">
+                <?php wp_nav_menu(['theme_location' => 'main_menu']); ?>
+            </div>
+        </div>
+    </header>
