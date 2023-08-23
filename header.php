@@ -20,7 +20,12 @@
                 }
                 ?>
             </div>
-            <div class="header__menu">
+            <div class="hamburger-menu open">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="header__menu js-nav-wrapper">
                 <?php wp_nav_menu(['theme_location' => 'main_menu']); ?>
             </div>
         </div>
