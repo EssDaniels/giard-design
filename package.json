@@ -35,9 +35,10 @@
   "dependencies": {
     "autoprefixer": "^10.4.8",
     "bootstrap": "^5.3.1",
-    "browser-sync-webpack-plugin": "^2.3.0",
     "bootstrap-icons": "^1.10.3",
+    "browser-sync-webpack-plugin": "^2.3.0",
+    "jquery": "^3.6.1",
     "lightbox2": "^2.11.4",
-    "jquery": "^3.6.1"
+    "macy": "^2.5.1"
   }
 }
