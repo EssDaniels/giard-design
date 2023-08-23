@@ -1,0 +1,18 @@
+.offer{
+  background-color: $color-grey;
+  padding: 120px 0 160px;
+  &__title{
+    margin-bottom: 96px;
+    h2{
+      margin: 0 0 32px;
+    }
+  }
+  a{
+    position: relative;
+    padding-right: 32px;
+    padding-bottom: 4px;
+    border-bottom: 1px solid currentColor; /* Imitacja podkreślenia */
+    display: inline-block;
+    text-decoration: none;
+  }
+}

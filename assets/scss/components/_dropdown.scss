@@ -1,0 +1,25 @@
+.dropdown {
+  position: relative;
+  display: inline-block;
+  &__toggle {
+    cursor: pointer;
+  }
+  &__menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+  }
+  &__menu.show {
+    display: block;
+  }
+
+  &__item {
+    padding: 8px 12px;
+    display: block;
+    text-decoration: none;
+    color: #333;
+  }
+}

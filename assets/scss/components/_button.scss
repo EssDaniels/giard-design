@@ -1,0 +1,133 @@
+.button{
+  display: inline-block;
+  position: relative;
+  padding: 12px 24px 14px;
+  border-radius: 200px;
+  text-decoration: none;
+  text-align: center;
+  &--white{
+    background-color: $color-white;
+   
+  }
+  &--text-white{
+    color: $color-white;
+  }
+  &--green{
+    background-color: $color-green;
+    transition: all 0.3s ease;
+    &:hover{
+      transition: all 0.3s ease;
+      background-color: $color-dark-green;
+    }
+  }
+  &--text-green{
+    color: $color-green;
+  }
+  &--grey{
+    background-color: $color-grey;
+    transition: all 0.3s ease;
+    &:hover{
+      background-color: $color-white;
+      transition: all 0.3s ease;
+    }
+  }
+  &--text-grey{
+    color: $color-grey;
+  }
+  &--border-grey{
+    border: 1px solid $color-grey;
+    color: $color-grey;
+  }
+  &--border-green{
+    border: 1px solid $color-green;
+    color: $color-green;
+  }
+  &--border-black{
+    border: 1px solid $color-black;
+    color: $color-black;
+    width: auto;
+    margin: auto auto 0;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  &--arrow-green{
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 50%;
+      width: 20px; /* Szerokość SVG */
+      height: 20px; /* Wysokość SVG */
+      background: url('../images/green-arrow.svg') no-repeat center center;
+      background-size: contain; /* Dostosuj do własnych potrzeb */
+      transform: translateY(-50%);
+      transition: all 0.3s ease;
+    }
+    &:hover{
+      &::after{
+        transition: all 0.3s ease;
+        right: -4px;
+      }
+    }
+  }
+  &--arrow-grey{
+    padding: 12px 50px 14px 24px;
+    &::after {
+      content: "";
+      position: absolute;
+      right: 22px;
+      top: 50%;
+      width: 20px; /* Szerokość SVG */
+      height: 20px; /* Wysokość SVG */
+      background: url('../images/white-arrow.svg') no-repeat center center;
+      background-size: contain; /* Dostosuj do własnych potrzeb */
+      transform: translateY(-50%);
+      transition: all 0.3s ease;
+    }
+    &:hover{
+      &::after{
+        transition: all 0.3s ease;
+        right: 18px;
+      }
+    }
+  }
+  &--arrow-black{
+    padding: 12px 50px 14px 24px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: 22px;
+      top: 50%;
+      width: 20px; /* Szerokość SVG */
+      height: 20px; /* Wysokość SVG */
+      background: url('../images/black-arrow.svg') no-repeat center center;
+      background-size: contain; /* Dostosuj do własnych potrzeb */
+      transform: translateY(-50%);
+      transition: all 0.3s ease;
+    }
+    &:hover{
+      &::after{
+        transition: all 0.3s ease;
+        right: 22px;
+        top: 59%;
+      }
+    }
+  }
+  &--arrow-down{
+    padding: 12px 48px 12px 24px;
+    &:after{
+        transform: rotate(90deg);
+        right: 18px;
+        top: 16px;
+        transition: all 0.2s ease;
+    }
+    &:hover{
+      &::after{
+        transition: all 0.2s ease;
+        right: 18px;
+        top: 18px;
+      }
+    }
+  }
+}

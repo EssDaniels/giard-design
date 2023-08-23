@@ -1,0 +1,22 @@
+.realizations{
+  padding: 120px 0;
+  background-color: $color-beige;
+  position: relative;
+  span.category{
+    display: inline-block;
+    margin-bottom: 16px;
+  }
+  h2{
+    margin-bottom: 96px;
+  }
+  &__gradient{
+    position: absolute;
+    bottom: 100px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    height: 1000px;
+    background: linear-gradient(360deg, #DCC1AB 0%, rgba(214, 183, 158, 0.00) 100%);
+  }
+}

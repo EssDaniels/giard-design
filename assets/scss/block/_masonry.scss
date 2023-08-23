@@ -1,0 +1,22 @@
+.masonry-gallery{
+  display: flex;
+  flex-wrap: wrap;
+}
+.masonry-item {
+  width: 100%;
+}
+
+.masonry-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease forwards;
+}

@@ -1,0 +1,40 @@
+.hero{
+  background-color: $color-beige;
+  overflow: hidden;
+  h1{
+    margin-top: 144.5px;
+    margin-bottom: 44px;
+  }
+  p{
+    margin-bottom: 72px;
+  }
+  &__buttons{
+    display: flex;
+    justify-content: space-between;
+    
+  }
+  &__images{
+    background-repeat: no-repeat;
+    background-size: 100%; /* rozmiar tła - 50% szerokości kontenera i automatycznie dopasowana wysokość */
+    position: relative;
+    background-position: bottom;
+    background-size: cover;
+    margin-right: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 50%;
+  }
+  &__description{
+    width: calc(1262px - 48%);
+    display: flex;
+    flex-direction: column;
+   
+  }
+  &__wrapper{
+    position: relative;
+    height: 100%;
+    max-height: 737px;
+  }
+}

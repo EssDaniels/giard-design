@@ -1,0 +1,29 @@
+.header{
+  position: relative;
+  height: 72px;
+  transition: height 0.3s ease;
+  &__wrapper{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1262px;
+    margin: 0;
+    margin-left: calc((100vw - 1262px) / 2);
+    width: auto;
+  }
+  &__logo{
+    margin: 24px 0;
+  }
+  &__menu{
+    display: flex;
+    align-items: center;
+  }
+  &.sticky{
+    height: 70px; /* lub inna wartość, którą chcesz ustawić dla "przyklejonego" nagłówka */
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: $color-grey;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.16);
+  }
+}

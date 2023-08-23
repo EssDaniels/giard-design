@@ -1,0 +1,28 @@
+.about{
+  background-color: $color-green;
+  position: relative;
+  h2{
+    color: $color-grey;
+    margin-bottom: 40px;
+  }
+  p{
+    color: $color-grey;
+    margin-bottom: 72px;
+  }
+  span.category{
+    color: $color-grey;
+    margin-bottom: 16px;
+    display: block;
+  }
+  &__img {
+    background-image: url('../images/domek.png');
+    background-position: left center; /* położenie tła - przyklejone do lewej strony, wycentrowane pionowo */
+    background-repeat: no-repeat;
+    background-size: 48% auto; /* rozmiar tła - 50% szerokości kontenera i automatycznie dopasowana wysokość */
+    position: relative;
+  }
+  &__description{
+    margin: 135px 0;
+    padding-left: 96px;
+  }
+}

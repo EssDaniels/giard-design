@@ -11,4 +11,18 @@
 //global
 @import "./global";
 
-//rest
+//components
+@import "./components/menu",
+        './components/button',
+        './components/card',
+        './components/slick';
+
+//block
+@import "./block/header",
+        './block/hero',
+        "./block/contact",
+        './block/offer',
+        './block/about',
+        './block/realizations',
+        './block/footer',
+        './block/masonry';
