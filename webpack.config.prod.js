@@ -16,6 +16,10 @@
       module: {
         rules: [
           {
+            test: /\.css$/,
+            use: [MiniCssExtractPlugin.loader, 'css-loader'],
+          },
+          {
             test: /\.txt$/,
             use: "raw-loader",
           },
