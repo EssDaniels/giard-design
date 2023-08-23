@@ -8,6 +8,7 @@ import LightboxComponent from './components/lihgtbox';
 import slickComponent from './components/slick-component';
 import { macyInstance } from './components/masonry';
 import headerSticky from './components/header-sticky';
+import essHamburger from './components/hamburger';
 
 
 (function ($) {
@@ -29,6 +30,7 @@ var documentReady = function () {
   masonryComponent();
   loadImagesAjax();
   headerSticky();
+  essHamburger();
 }
 
 

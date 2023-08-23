@@ -9,13 +9,36 @@
     margin: 0;
     margin-left: calc((100vw - 1262px) / 2);
     width: auto;
+    align-items: center;
+    @include media-breakpoint-down(xxl) { 
+      margin-left: 0;
+     }
   }
   &__logo{
     margin: 24px 0;
+    z-index: 10000;
   }
   &__menu{
     display: flex;
     align-items: center;
+    @include media-breakpoint-down(md) { 
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      background-color: $color-grey;
+      transition: all 0.3s ease;
+      z-index: 100;
+      justify-content: center;
+      transform: translateY(-100%);
+      border-radius: 0 0 12px 12px;
+      padding-bottom: 24px;
+      &.show{
+        top: 65px;
+        transition: all 0.3s ease;
+        transform: translateY(0);
+      }
+    }
   }
   &.sticky{
     height: 70px; /* lub inna wartość, którą chcesz ustawić dla "przyklejonego" nagłówka */

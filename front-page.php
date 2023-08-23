@@ -29,7 +29,7 @@ $additional_images = array_slice($image_ids, 10);
               <p>Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka realizacji. Oferujemy kompleksowy zakres usługz indywidualnym podejściem do każdego projektu.</p>
               <div class="hero__buttons">
                 <a href="#" class="button button--green button--text-grey">Skontaktuj się z nami</a>
-                <a href="#realizacje" class="button button--border-green button--arrow-green button--arrow-down scroll-to-section-js">Zobacz nasze realizacje</a>
+                <a href="#realizacje" class="button button--border-green button--arrow-green-and-white-mobile button--arrow-down scroll-to-section-js">Zobacz nasze realizacje</a>
               </div>
             </div>
             <div class="hero__images" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/assets/images/slider1.jpg')">
@@ -43,11 +43,10 @@ $additional_images = array_slice($image_ids, 10);
               <p>Oferujemy kompletną obsługę inwestycji terenów zielonych. Projektujemy nowoczesne ogrody przydomowe oraz rezydencjonalne. Stworzymy dla Ciebie projekt, zwizualizujemy go i wcielimy w życie, a na każdym etapie posłużymy radą i wieloletnim doświadczeniem. </p>
               <div class="hero__buttons">
                 <a href="#" class="button button--green button--text-grey">Skontaktuj się z nami</a>
-                <a href="#realizacje" class="button button--border-green button--arrow-green button--arrow-down scroll-to-section-js">Zobacz nasze realizacje</a>
+                <a href="#realizacje" class="button button--border-green button--arrow-green-and-white-mobile button--arrow-down scroll-to-section-js">Zobacz nasze realizacje</a>
               </div>
             </div>
             <div class="hero__images" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/assets/images/slide2.jpg')">
-
             </div>
           </div>
         </div>
@@ -65,25 +64,25 @@ $additional_images = array_slice($image_ids, 10);
       </div>
     </div>
     <div class="row">
-      <div class="col-md-4">
-        <div class="card">
-          <img class="card__icon" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/pen.png">
+      <div class="col-lg-4">
+        <div class="card-ess">
+          <img class="card-ess__icon" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/pen.png">
           <h3>Projekty</h3>
           <p class="small">Zaprojektujemy Twój ogród w nowoczesnym stylu i z najlepszym wykorzystaniem istniejącej przestrzeni.</p>
           <a href="" class="button--arrow-green">Dowiedz się więcej</a>
         </div>
       </div>
-      <div class="col-md-4">
-        <div class="card">
-          <img class="card__icon" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/eye.png">
+      <div class="col-lg-4">
+        <div class="card-ess">
+          <img class="card-ess__icon" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/eye.png">
           <h3>Wizualizacje</h3>
           <p class="small">Przedstawimy Ci projekty koncepcyjne w postaci wirtualnego spaceru animowanego w technologii 3D.</p>
           <a href="" class="button--arrow-green">Dowiedz się więcej</a>
         </div>
       </div>
-      <div class="col-md-4">
-        <div class="card">
-          <img class="card__icon" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/stars.png">
+      <div class="col-lg-4">
+        <div class="card-ess">
+          <img class="card-ess__icon" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/stars.png">
           <h3>Realizacje</h3>
           <p class=" small">Zrealizujemy Twoje marzenie przy użyciu najnowszych rozwiązań i zaawansowanych technologii.</p>
           <a href="" class="button--arrow-green">Dowiedz się więcej</a>
@@ -95,9 +94,9 @@ $additional_images = array_slice($image_ids, 10);
 <section class="about about__img" id="about-js">
   <div class="container">
     <div class="row">
-      <div class="col-md-6 ">
+      <div class="col-12 col-md-6 ">
       </div>
-      <div class="col-md-6 about__description">
+      <div class="col-12 col-md-6 about__description">
         <span class="category">O firmie</span>
         <h2>Tworzymy z <span>pasją</span></h2>
         <p>Każdy projekt to nowe wyzwanie. Dlatego nasz zespół tworzą wykwalifikowani projektanci oraz architekci, których zadaniem jest rozpoznanie i realizacja potrzeb każdego Klienta. Nasza specjalizacja to przestrzenie nowoczesne, które charakteryzuje minimalizm, geometria i elegancka prostota. Tworzymy ogrody małoobsługowe, dostosowane do współczesnego trybu życia.</p>
@@ -137,7 +136,7 @@ $additional_images = array_slice($image_ids, 10);
     <div class="row">
       <div class="col-10 offset-1">
         <div class="row contact__wrapper">
-          <div class="col-md-7 offset-1 contact__title">
+          <div class="col-md-7 offset-0 offset-md-1 contact__title">
             <h2 class="small">Zostańmy w kontakcie! Znajdziesz nas na <span>Instagramie</span></h2>
           </div>
           <div class="col-md-2">

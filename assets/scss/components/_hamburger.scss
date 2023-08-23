@@ -1,0 +1,76 @@
+/* Style dla ikony hamburgera */
+.hamburger-menu {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+  z-index: 100000;
+  position: relative;
+}
+
+.hamburger-menu div {
+  width: 2rem;
+  height: 0.25rem;
+  background-color: $color-black;
+  position: absolute;
+  transform-origin: center;
+}
+.hamburger-menu--color-pro div {
+  background-color: white;
+}
+.hamburger-menu.open div:nth-child(1) {
+  transform: rotate(0deg);
+  transition: all 0.3s ease;
+  top: 3px;
+}
+
+.hamburger-menu.open div:nth-child(2) {
+  display: block;
+  transition: all 0.3s ease;
+
+}
+
+.hamburger-menu.open div:nth-child(3) {
+  transform: rotate(0deg);
+  transition: all 0.3s ease;
+  top: 25px;
+}
+
+.hamburger-menu.close div:nth-child(1) {
+  transform: rotate(45deg);
+  transition: all 0.3s ease;
+  top: 14px;
+
+}
+
+.hamburger-menu.close div:nth-child(2) {
+  display: none;
+  transition: all 0.3s ease;
+  top: 14px;
+
+
+}
+
+.hamburger-menu.close div:nth-child(3) {
+  transform: rotate(-45deg);
+  transition: all 0.3s ease;
+  top: 14px;
+
+
+}
+
+/* Media query dla ekranów o szerokości do 768px */
+@include media-breakpoint-down(md) { 
+  .hamburger-menu {
+    display: flex;
+    margin-right: 24px;
+  }
+}
+@include media-breakpoint-down(md) { 
+  .hamburger-menu {
+    display: flex;
+    margin-right: 24px;
+  }
+}

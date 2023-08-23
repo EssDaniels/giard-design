@@ -2,6 +2,11 @@
   display: flex;
   gap: 48px;
   position: relative;
+  margin: 0;
+  @include media-breakpoint-down(md) { 
+  flex-direction: column;
+  gap: 24px;
+  }
   & .sub-menu {
     display: block; /* Zawsze wyświetlane, ale niewidoczne z powodu opacity */
     position: absolute;
@@ -18,10 +23,22 @@
     overflow: hidden; /* Ukrywa zawartość, która wychodzi poza granice */
     transition: 0.3s all ease-out;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.16);
+    @include media-breakpoint-down(md) { 
+      top: 20%;
+    }
     li{
       margin: 12px 0;
     }
   }
+    a{
+      @extend %font-secondery;
+      @include typography(14px, 21px, 400);
+      color: $color-black;
+      text-decoration: none;
+      @include media-breakpoint-down(md) { 
+        @include typography(22px, 26px, 400);
+      }
+    } 
 }
 
 .menu-item-has-children:hover .sub-menu,

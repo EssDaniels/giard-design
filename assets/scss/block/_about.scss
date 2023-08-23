@@ -8,6 +8,9 @@
   p{
     color: $color-grey;
     margin-bottom: 72px;
+    @include media-breakpoint-down(md) { 
+      margin-bottom: 32px;
+     }
   }
   span.category{
     color: $color-grey;
@@ -20,9 +23,17 @@
     background-repeat: no-repeat;
     background-size: 48% auto; /* rozmiar tła - 50% szerokości kontenera i automatycznie dopasowana wysokość */
     position: relative;
+    @include media-breakpoint-down(md) { 
+      background-size: 100% auto;
+      background-position: top;
+     }
   }
   &__description{
     margin: 135px 0;
     padding-left: 96px;
+    @include media-breakpoint-down(md) { 
+      padding: 0 24px;
+      margin: 450px 0 40px;
+     }
   }
 }

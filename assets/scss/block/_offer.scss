@@ -1,8 +1,14 @@
 .offer{
   background-color: $color-grey;
   padding: 120px 0 160px;
+  @include media-breakpoint-down(md) { 
+    padding: 40px 0;
+   }
   &__title{
     margin-bottom: 96px;
+    @include media-breakpoint-down(md) { 
+      margin-bottom: 40px;
+     }
     h2{
       margin: 0 0 32px;
     }

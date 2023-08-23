@@ -49,13 +49,22 @@
   height: auto;
   max-height: 737px;
   position: relative;
+  @include media-breakpoint-down(md) { 
+    width: 100%;
+   }
 }
 .slick-custom-wrapper{
   max-height: 737px;
+  @include media-breakpoint-down(md) { 
+    height: 650px;
+   }
 }
 .slick-custom-slide {
   width: 100%;
   max-height: 737px;
+  @include media-breakpoint-down(md) { 
+    height: 650px;
+   }
 }
 
 .slick-custom-slide img {

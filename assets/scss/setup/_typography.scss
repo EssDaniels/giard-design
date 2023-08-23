@@ -16,6 +16,13 @@ h1 {
   @include typography(60px, 70px, 500);
   color: $color-black;
   font-style: normal;
+ 
+   @include media-breakpoint-down(sm) { 
+    @include typography(32px, 42px, 500);
+   }
+   @include media-breakpoint-down(md) { 
+    @include typography(40px, 50px, 500);
+   }
 }
 
 %typo-h2,
@@ -31,6 +38,13 @@ h2 {
     @extend %font-secondery;
     font-style: italic;
   }
+  @include media-breakpoint-down(md) { 
+    @include typography(32px, 40px, 500);
+   }
+   @include media-breakpoint-down(sm) { 
+    @include typography(24px, 32px, 500);
+    letter-spacing: 0;
+   }
 }
 h2.small {
   @extend %font-primary;
@@ -42,6 +56,13 @@ h2.small {
     @extend %font-secondery;
     font-style: italic;
   }
+  @include media-breakpoint-down(md) { 
+    @include typography(28px, 36px, 400);
+   }
+   @include media-breakpoint-down(sm) { 
+    @include typography(20px, 28px, 400);
+    letter-spacing: 0;
+   }
 }
 
 %typo-h3,
@@ -51,6 +72,12 @@ h3 {
   @include typography(28px, 32.2px, 500);
   color: $color-black;
   letter-spacing: -1.4px;
+  @include media-breakpoint-down(md) { 
+    @include typography(24px, 28px, 500);
+   }
+   @include media-breakpoint-down(sm) { 
+    @include typography(20px, 24px, 500);
+   }
 }
 
 %typo-h4,
@@ -60,6 +87,12 @@ h4 {
   @include typography(14px, 32.2px, 500);
   color: $color-black;
   letter-spacing: -1.4px;
+  @include media-breakpoint-down(md) { 
+    @include typography(12px, 28px, 500);
+   }
+   @include media-breakpoint-down(sm) { 
+    @include typography(10px, 24px, 500);
+   }
 }
 
 %p-regular,
@@ -68,12 +101,19 @@ p {
   @extend %font-secondery;
   @include typography(16px, 24px, 400);
   color: $color-black;
+  @include media-breakpoint-down(md) { 
+    @include typography(14px, 22px, 400);
+   }
+   @include media-breakpoint-down(sm) { 
+    @include typography(14px, 20px, 400);
+   }
 }
 p.small{
   @extend %font-secondery;
   @include typography(14px, 21px, 400);
   color: $color-black;
   letter-spacing: -0.14px;
+ 
 }
 span.category{
   @include typography(12px, 18px, 400);
@@ -84,20 +124,19 @@ span.category{
   &--white{
     color: $color-white;
   }
+  @include media-breakpoint-down(md) { 
+    @include typography(14px, 22px, 400);
+   }
+   @include media-breakpoint-down(sm) { 
+    @include typography(12px, 20px, 400);
+   }
 }
 
 a{
   @extend %font-secondery;
   @include typography(16px, 24px, 400);
   color: $color-green;
-  
-}
-
-.menu{
-  a{
-    @extend %font-secondery;
-    @include typography(14px, 21px, 400);
-    color: $color-black;
-    text-decoration: none;
-  }
+  @include media-breakpoint-down(md) { 
+    @include typography(14px, 22px, 400);
+   }
 }

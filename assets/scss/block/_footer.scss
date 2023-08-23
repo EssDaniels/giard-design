@@ -2,17 +2,30 @@
   background-color: $color-black;
   color: $color-grey;
   padding: 80px 0;
+  @include media-breakpoint-down(md) { 
+    padding: 40px 0;
+    }
   p{
     color: $color-grey;
     margin: 0 24px 0 0;
+    @include media-breakpoint-down(md) { 
+     margin: 0 0 16px;
+     text-align: center;
+     }
   }
   &__menu-social{
     margin-bottom: 120px;
+    @include media-breakpoint-down(md) { 
+      margin-bottom: 40px;
+      }
     a{
       color: $color-grey;
       text-decoration: none;
       @include typography(14px, 21px, 400);
       margin-left: 48px;
+      @include media-breakpoint-down(md) { 
+        margin: 0 0 16px;
+        }
     }
   }
   .menu{
@@ -26,6 +39,11 @@
     padding-bottom: 62px;
     border-bottom: 1px solid $color-grey;
     margin-bottom: 62px;
+    img{
+      @include media-breakpoint-down(md) { 
+        margin: 0 0 40px;
+        }
+    }
   }
   &__made-by{
       @extend %font-secondery;

@@ -1,11 +1,16 @@
-.card{
+.card-ess{
   border-radius: 28px;
   background: $color-white;
   padding: 48px 40px;
+  @include media-breakpoint-down(lg) { 
+
+    margin-bottom: 24px;
+   }
   &__icon{
     height: 40px;
     width: auto;
     margin-bottom: 40px;
+    object-fit: contain;
   }
   p{
     margin-bottom: 63px;
