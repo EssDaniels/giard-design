@@ -14,11 +14,12 @@ $font-name: "Montserrat";
 @include font-face($font-name, "../fonts/" + $font-name + "/" + $font-name + "-Black", 900, normal, ttf);
 
 $font-name: "Montserrat";
+$font-name-italic: "Montserrat-italic";
 
-@include font-face($font-name , "../fonts/" + $font-name+'-italic' + "/" + $font-name + "-LightItalic", 300, normal, ttf);
-@include font-face($font-name , "../fonts/" + $font-name+'-italic' + "/" + $font-name + "-MediumItalic", 400, normal, ttf);
-@include font-face($font-name , "../fonts/" + $font-name+'-italic' + "/" + $font-name + "-BoldItalic", 700, normal, ttf);
-@include font-face($font-name , "../fonts/" + $font-name+'-italic' + "/" + $font-name + "-BlackItalic", 900, normal, ttf);
+@include font-face($font-name-italic , "../fonts/" + $font-name+'-italic' + "/" + $font-name + "-LightItalic", 300, normal, ttf);
+@include font-face($font-name-italic , "../fonts/" + $font-name+'-italic' + "/" + $font-name + "-MediumItalic", 400, normal, ttf);
+@include font-face($font-name-italic , "../fonts/" + $font-name+'-italic' + "/" + $font-name + "-BoldItalic", 700, normal, ttf);
+@include font-face($font-name-italic , "../fonts/" + $font-name+'-italic' + "/" + $font-name + "-BlackItalic", 900, normal, ttf);
 
 $font-name: "Inter";
 
